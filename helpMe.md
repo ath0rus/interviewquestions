@@ -1,4 +1,4 @@
-
+```Javascript
 const secretText = "booj!b ! ojba !bra!! b jrtatG!boootebab! j!jt!!tjjeeobo";
 
 function decrypt(secretText) {
@@ -37,7 +37,8 @@ console.log("Does my program work? Hey! === ", decrypt("!Heyye!y!!"));
 // console.log(decrypt("!Heyye!y!!"
 Your previous Plain Text content is preserved below:
 
-THE EXERCISE
+```
+# THE EXERCISE
 We know you’re going to do well in your interview today, so we wrote down a message we’d like to share with you. However, we don’t want anyone else to read your message, so we encrypted it with a simple algorithm.
 
 
@@ -47,7 +48,7 @@ Our encryption algorithm works by associating a characters position in the origi
 Using this pattern, write a function to accept an encrypted string and return the decrypted string. After retrieving the decrypted string, make sure to print it out so you can read it!
 
  
-Here’s your secret message text: booj!b ! ojba !bra!! b jrtatG!boootebab! j!jt!!tjjeeobo
+Here’s your secret message text: **booj!b ! ojba !bra!! b jrtatG!boootebab! j!jt!!tjjeeobo**
 (e.g., const secretText = “booj!b ! ojba !bra!! b jrtatG!boootebab! j!jt!!tjjeeobo”)
 
 
@@ -55,6 +56,3 @@ NOTES
 - Use one of these languages and write a working program, not psuedocode: C, C#, C++, Dart, Java, Javascript, Kotlin, Python, Swift, TypeScript
 - You may use Google during the interview, just give us a heads up what you’re searching for
 - ASK QUESTIONS! We’re here to help and asking questions won’t negatively impact your score
-
-
- */
