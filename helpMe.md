@@ -1,3 +1,23 @@
+# THE EXERCISE
+We know you’re going to do well in your interview today, so we wrote down a message we’d like to share with you. However, we don’t want anyone else to read your message, so we encrypted it with a simple algorithm.
+
+
+Our encryption algorithm works by associating a characters position in the original string to the number of occurrences in the encrypted string. In other words, a character that occurs 1 time in the encrypted string must be the 1st character in the original, decrypted string (0th index) whereas a character that occurs 10 times will be the 10th character in the string. For example, “Hey!” might be encrypted as “Heeyyy!!!!” or “!Heyye!y!!” since the first letter in the original string occurs once in the encrypted string, the 2nd character occurs twice, and so on.
+
+ 
+Using this pattern, write a function to accept an encrypted string and return the decrypted string. After retrieving the decrypted string, make sure to print it out so you can read it!
+
+ 
+Here’s your secret message text: **booj!b ! ojba !bra!! b jrtatG!boootebab! j!jt!!tjjeeobo**
+(e.g., const secretText = “booj!b ! ojba !bra!! b jrtatG!boootebab! j!jt!!tjjeeobo”)
+
+
+NOTES
+- Use one of these languages and write a working program, not psuedocode: C, C#, C++, Dart, Java, Javascript, Kotlin, Python, Swift, TypeScript
+- You may use Google during the interview, just give us a heads up what you’re searching for
+- ASK QUESTIONS! We’re here to help and asking questions won’t negatively impact your score
+
+# Sample code
 ```Javascript
 const secretText = "booj!b ! ojba !bra!! b jrtatG!boootebab! j!jt!!tjjeeobo";
 
@@ -36,23 +56,4 @@ function decrypt(secretText) {
 console.log("Does my program work? Hey! === ", decrypt("!Heyye!y!!"));
 // console.log(decrypt("!Heyye!y!!"
 Your previous Plain Text content is preserved below:
-
 ```
-# THE EXERCISE
-We know you’re going to do well in your interview today, so we wrote down a message we’d like to share with you. However, we don’t want anyone else to read your message, so we encrypted it with a simple algorithm.
-
-
-Our encryption algorithm works by associating a characters position in the original string to the number of occurrences in the encrypted string. In other words, a character that occurs 1 time in the encrypted string must be the 1st character in the original, decrypted string (0th index) whereas a character that occurs 10 times will be the 10th character in the string. For example, “Hey!” might be encrypted as “Heeyyy!!!!” or “!Heyye!y!!” since the first letter in the original string occurs once in the encrypted string, the 2nd character occurs twice, and so on.
-
- 
-Using this pattern, write a function to accept an encrypted string and return the decrypted string. After retrieving the decrypted string, make sure to print it out so you can read it!
-
- 
-Here’s your secret message text: **booj!b ! ojba !bra!! b jrtatG!boootebab! j!jt!!tjjeeobo**
-(e.g., const secretText = “booj!b ! ojba !bra!! b jrtatG!boootebab! j!jt!!tjjeeobo”)
-
-
-NOTES
-- Use one of these languages and write a working program, not psuedocode: C, C#, C++, Dart, Java, Javascript, Kotlin, Python, Swift, TypeScript
-- You may use Google during the interview, just give us a heads up what you’re searching for
-- ASK QUESTIONS! We’re here to help and asking questions won’t negatively impact your score
