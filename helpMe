@@ -1,8 +1,31 @@
+
 const secretText = "booj!b ! ojba !bra!! b jrtatG!boootebab! j!jt!!tjjeeobo";
 
-function decrypt(secretText) { 
-  const decryptedString = "";
-  
+function decrypt(secretText) {
+  const characters = secretText.split("");
+  const whichCharacters = new Set(characters);
+  const numberOfCharacters = Array.from(whichCharacters).length;
+  let letterValues = [];
+  let i = 0;
+  for (i = 0; i <= numberOfCharacters; i++) {
+    const letter = whichCharacters[i];
+    let count = 0;
+    characters.forEach((char) => {
+      if (char == letter) {
+        count++;
+      }
+    });
+    letterValues.push(count);
+  }
+  console.log(letterValues);
+  let decryptedStringArray = new Array(numberOfCharacters);
+  whichCharacters.forEach((char, i) => {
+    console.log(decryptedStringArray[letterValues[i]]);
+    decryptedStringArray[letterValues[i]] = char;
+  });
+  console.log(decryptedStringArray);
+  const decryptedString = decryptedStringArray.join("");
+  // console.log(decryptedString);
   // TODO: Add code here to loop over the string and identify which letters occur the most (No hard coding!)
   // TODO: Based on the occurences of each letter, create a string and return it
   // E.g., "G" occurs once -> decrypted string starts with "G"
@@ -11,12 +34,7 @@ function decrypt(secretText) {
 
 // The output from this should be "Hey!"
 console.log("Does my program work? Hey! === ", decrypt("!Heyye!y!!"));
-
-// The output from this should be readable :)
-console.log("Final answer: ", decrypt(secretText));
-
-
-/* 
+// console.log(decrypt("!Heyye!y!!"
 Your previous Plain Text content is preserved below:
 
 THE EXERCISE
